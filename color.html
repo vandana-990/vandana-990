@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="colors">
+        <span style="--clr:#1dd1a1;" onclick="changColor('#1dd1a1')" class="active"></span>
+        <span style="--clr:#ff6b6b;" onclick="changColor('#ff6b6b')"></span>
+        <span style="--clr:#2e86de;" onclick="changColor('#2e86de')"></span>
+        <span style="--clr:#f368e0;" onclick="changColor('#f368e0')"></span>
+        <span style="--clr:#ff9f43;" onclick="changColor('#ff9f43')"></span>
+    </div>
+    <script>
+        function changColor(color){
+            document.body.style.background= color;
+
+            // mark as active selected color
+            document.querySelectorAll('span').forEach(function(item){
+                item.classList.remove('active');
+            })
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

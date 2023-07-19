@@ -1,0 +1,83 @@
+header{
+    border: 2px solid black;
+    background-color:hotpink;
+    font-size: 50px;
+    text-align: center;
+    padding: 1px;
+    color: white;
+    font-family: 'lucida handwriting';
+}
+h1{
+    text-shadow: 2px 2px 5px black;
+}
+nav {
+    display:flex;
+    background-color: rgb(31, 30, 30);
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    float: left;    
+}
+nav a:hover{
+    background-color: black;
+}
+nav a:visited{
+    background-color: rgb(31, 29, 29);
+    color: white;
+}
+.active{
+    background-color:red;
+}
+.position{    
+    position: sticky;
+    top:0;
+}
+.flex{       
+    margin-left: auto;
+    float: right;
+}
+#box{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 2px;
+    border: 8px solid black;
+    margin: 5px;
+}
+.special{
+    text-indent: 30px;
+    background-color: lightskyblue;
+    padding: 15px;
+    color: white;
+    text-shadow: 3px 3px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.clear{
+    clear: right;
+}
+p{
+    text-indent: 50px;
+    text-align: justify;
+    text-align-last: right;
+    letter-spacing: 2px;
+    line-height: 15px;
+    word-spacing: 5px;
+    font-family: papyrus;
+    font-style:oblique;
+   /* font-variant: small-caps;  */
+}
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+    .flex{
+        margin-left: 0;
+    }
+    .position{
+        position: relative;
+    }
+}
+

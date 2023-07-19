@@ -1,0 +1,86 @@
+* {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .img {
+            background: url('images/IMG_20210917_222825_492.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .img::after{
+            position: absolute;
+            content:"";
+            top:0;
+            left:0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.074)
+        }
+        .content {
+            border: 1px solid transparent;
+            z-index: 999;
+            text-align: center;
+            padding: 6px 32px;
+            backdrop-filter: blur(3px);
+            box-shadow: 0 0 10px 0 rgba(29, 29, 29, 0.8);
+            width: 300px;
+            height: 65%;
+        }
+
+        header {
+            font-size: 50px;
+            color: white;
+            padding: 15px;
+            text-shadow: 0 0 5px black;
+        }
+
+        form {
+            margin: 10px;
+            margin-top: 0;
+            padding: 5px;
+        }
+
+        input {
+            margin: 12px 8px;
+            padding: 7px 3px;
+            width: 90%;
+            border: transparent;
+            box-shadow: 0 0 10px 0 rgba(29, 29, 29, 0.8);
+        }
+        input:hover{
+            transform: translateY(-1px)
+        }
+        input[type="button"] {
+            background-color: rgb(36, 36, 36);
+            padding-top: 10px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+        input:hover{
+            transform: translateY(-1px);
+        }
+        input:hover[type=button]:hover{
+            transform: none;
+            text-decoration: underline;
+        }
+        a{
+            color:white;
+            text-decoration: none;  
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .line{
+            border: 1px solid white;
+        }
+        .or{
+            color:white;
+        }

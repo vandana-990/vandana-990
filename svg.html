@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('images/IMG_20210610_220620_720.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        svg {
+            height: 350px;
+            width: 100%;
+        }
+
+        svg text {
+            font-size: 200px;
+            fill: rgba(0, 0, 0, 0.4);
+            stroke-width: 1px;
+            stroke: #fff;
+            /* stroke-linejoin: round; */
+            stroke-dasharray: 60;
+            animation: animate 1s linear infinite;
+        }
+        @keyframes animate{
+            100%{
+                stroke-dashoffset: 120;
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg>
+        <text text-anchor="middle" x="50%" y="60%">VANDANA</text>
+    </svg>
+</body>
+
+</html>
